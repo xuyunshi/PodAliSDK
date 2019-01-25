@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.swift_version = '4.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '405029644@qq.com' => '405029644@qq.com' }
-  s.source           = { :git => 'https://github.com/xuyunshi/PodAliSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:xuyunshi/PodAliSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.vendored_frameworks ='PodAliSDK/Vendor/*.framework'
 
