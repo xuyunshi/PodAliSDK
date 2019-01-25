@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PodAliSDK_Example' do
+  pod 'PodAliSDK', :path => '../'
+
+  target 'PodAliSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
