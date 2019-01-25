@@ -1,0 +1,6 @@
+framework module PodAliSDK {
+  umbrella header "PodAliSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

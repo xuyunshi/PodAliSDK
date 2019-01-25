@@ -43,9 +43,9 @@
 		6C49E2E582AE5C525A035CD0 /* Pods-PodAliSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodAliSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodAliSDK_Example/Pods-PodAliSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7E7440EC69C15F3CA4B203B9 /* Pods_PodAliSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodAliSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8908AE6F4B78F84507F9124B /* Pods_PodAliSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodAliSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BF9D21C67981DD4B9E00B3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A80FF8B0FADAE15CBC13B347 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C2D7E5FE24A65E000BA34EEA /* PodAliSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PodAliSDK.podspec; path = ../PodAliSDK.podspec; sourceTree = "<group>"; };
+		9BF9D21C67981DD4B9E00B3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A80FF8B0FADAE15CBC13B347 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C2D7E5FE24A65E000BA34EEA /* PodAliSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PodAliSDK.podspec; path = ../PodAliSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E922D1A3DD00AA5DB4D72549 /* Pods-PodAliSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodAliSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodAliSDK_Example/Pods-PodAliSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0A974346A7995D0174780D0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,42 +260,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A974346A7995D0174780D0F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodAliSDK_Example/Pods-PodAliSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PodAliSDK/PodAliSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PodAliSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodAliSDK_Example/Pods-PodAliSDK_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		62AA34CF77DF5509E471EA2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PodAliSDK_Tests-checkManifestLockResult.txt",
 			);
@@ -310,15 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PodAliSDK_Example-checkManifestLockResult.txt",
 			);

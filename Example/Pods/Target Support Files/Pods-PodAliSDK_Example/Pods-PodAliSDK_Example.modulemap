@@ -1,0 +1,6 @@
+framework module Pods_PodAliSDK_Example {
+  umbrella header "Pods-PodAliSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,5 +1,4 @@
 import XCTest
-import PodAliSDK
 
 class Tests: XCTestCase {
     

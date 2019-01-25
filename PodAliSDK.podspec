@@ -23,15 +23,18 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/405029644@qq.com/PodAliSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.swift_version = '4.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '405029644@qq.com' => '405029644@qq.com' }
-  s.source           = { :git => 'https://github.com/405029644@qq.com/PodAliSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xuyunshi/PodAliSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.vendored_frameworks ='PodAliSDK/Vendor/*.framework'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'PodAliSDK/Classes/**/*'
-  
+  s.libraries = 'c++', 'z'
+  s.frameworks = 'UIKit', 'CoreMotion', 'CFNetwork', 'CoreGraphics', 'CoreText', 'QuartzCore', 'CoreTelePhony', 'SystemConfiguration'
   # s.resource_bundles = {
   #   'PodAliSDK' => ['PodAliSDK/Assets/*.png']
   # }
@@ -39,4 +42,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 end
