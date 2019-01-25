@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PodAliSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of PodAliSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.swift_version = '4.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '405029644@qq.com' => '405029644@qq.com' }
-  s.source           = { :git => 'git@github.com:xuyunshi/PodAliSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xuyunshi/PodAliSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.vendored_frameworks ='PodAliSDK/Vendor/*.framework'
 
